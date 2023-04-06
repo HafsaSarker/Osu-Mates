@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from './routes/Layout';
 import HomePage from './Pages/Home/HomePage'
 import CreateCrew from './Pages/Create/CreateCrew';
+import ReadCrew from './Pages/Read/ReadCrew';
 import App from './App'
 import './index.css'
 
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<Layout />} >
           <Route index element={<HomePage />}/>
           <Route path='/create' element={<CreateCrew />}/>
+          <Route path='/gallery' element={<ReadCrew />} />
         </Route>
       </Routes>
     </BrowserRouter>

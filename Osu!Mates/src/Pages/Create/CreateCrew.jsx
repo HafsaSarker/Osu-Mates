@@ -3,7 +3,7 @@ import './CreateCrew.css'
 export default function CreateCrew() {
     return (
         <div className="createCrew">
-            <h1>Create a New Crewmate</h1>
+            <h1>Create a new osu!Mate</h1>
             <img src='../../../public/create.webp' />
 
             <div className="form">
@@ -44,7 +44,7 @@ export default function CreateCrew() {
                         </select>
                     </label>
                     
-                    <button className='primary-btn'>Create osu!Mate</button>
+                    <button className='primary-btn'>Create Mate</button>
                 </form>
             </div>
         </div>
