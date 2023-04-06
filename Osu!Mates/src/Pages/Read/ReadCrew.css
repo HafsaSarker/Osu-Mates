@@ -9,3 +9,7 @@
     border-radius: 10px;
     padding: 40px 0px;
 }
+
+.gallery > h1 {
+    margin: 30px 0px;
+}
