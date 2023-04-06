@@ -14,5 +14,6 @@
 .homePage > img {
     width: 250px;
     height: 250px;
-    object-fit: contain;
+    object-fit: scale-down;
+    margin-bottom: 15px;
 }
