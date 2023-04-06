@@ -1,0 +1,31 @@
+.createCrew {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(335, 10%, 25%);
+    border-radius: 10px;
+    padding: 40px 0px;
+}
+
+.createCrew > img {
+    border: solid #fff 2px;
+    width: 200px;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
+.create-crew-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.create-crew-form > label{
+    display: flex;
+    flex-direction: column;
+}

@@ -7,3 +7,29 @@
   color: #fff;
 }
 
+input:focus {
+  outline: none;
+}
+
+input, select, option {
+  border: none;
+  border-radius: 5px;
+  color: hsl(333, 50%, 45%);
+  padding: 4px 2px;
+}
+
+
+.primary-btn {
+  margin-top: 30px;
+  color: #fff;
+  background-color: hsl(333, 50%, 45%);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.primary-btn:hover {
+  background-color: hsl(333, 40%, 50%);
+}
