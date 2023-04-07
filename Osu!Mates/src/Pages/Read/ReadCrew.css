@@ -14,3 +14,9 @@
 .gallery > h1 {
     margin: 30px 0px;
 }
+
+.allCrews {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 40px;
+}
