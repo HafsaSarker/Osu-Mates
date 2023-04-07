@@ -82,7 +82,7 @@ export default function CreateCrew() {
                             <option value="purple">purple</option>
                             <option value="pink">pink</option>
                             <option value="green">green</option>
-                            <option value="yellow">yellow</option>
+                            <option value="orange">orange</option>
                         </select>
                     </label>
                     

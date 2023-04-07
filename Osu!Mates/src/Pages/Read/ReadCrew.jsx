@@ -23,7 +23,16 @@ export default function ReadCrew({crews, setAllCrews}) {
 
             {crews && crews.length > 0 ? 
             (
-                <CrewCard />
+                crews.map((crew, index) => 
+                    <CrewCard 
+                        key={index} 
+                        id={crew.id}  
+                        name={crew.name} 
+                        country_ranking={crew.country_ranking} 
+                        hit_accuracy={crew.hit_accuracy} 
+                        color={crew.color}
+                    />
+                )
             ) :
             (
                 <div className='empty-gallery'>
