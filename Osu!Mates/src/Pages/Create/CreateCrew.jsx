@@ -1,17 +1,40 @@
+import { useState } from 'react'
 import './CreateCrew.css'
 
 export default function CreateCrew() {
+    const [newCrew, setNewCrew] = useState({
+        name: "",
+        country_ranking: "",
+        hit_accuracy: null,
+        color: ""
+    })
+
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setNewCrew((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+    }
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(newCrew);
+    }
+
     return (
         <div className="createCrew">
             <h1>Create a new osu!Mate</h1>
-            <img src='../../../public/create.webp' />
+            <img src='./create.webp' />
 
             <div className="form">
-                <form className='create-crew-form'>
+                <form className='create-crew-form' onSubmit={handleSubmit}>
                     <label>
                         Name:
                         <input
                         type="text"
+                        name='name'
+                        onChange={handleChange}
                         placeholder='funnyBunny'
                     />
                     </label>
@@ -19,6 +42,8 @@ export default function CreateCrew() {
                     <label>
                         Country Ranking:
                         <input 
+                        onChange={handleChange}
+                        name='country_ranking'
                         type="text"
                         placeholder='245,823'
                     />
@@ -27,14 +52,19 @@ export default function CreateCrew() {
                     <label>
                         Hit accuracy (%):
                         <input 
-                        type="number"
+                        onChange={handleChange}
+                        name='hit_accuracy'
+                        type="float"
                         placeholder='95.56'
                     />
                     </label>
                    
                     <label>
-                        Crew color:
-                        <select>
+                        Mate color:
+                        <select 
+                            name='color' 
+                            onChange={handleChange}
+                        >
                             <option value="null">-select-</option>
                             <option value="blue">blue</option>
                             <option value="purple">purple</option>
