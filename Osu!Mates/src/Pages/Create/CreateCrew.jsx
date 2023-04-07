@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { supabase } from '../../client'
 import './CreateCrew.css'
 
 export default function CreateCrew() {
@@ -17,9 +18,20 @@ export default function CreateCrew() {
         }));
     }
     
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(newCrew);
+        
+        await supabase
+            .from('mates')
+            .insert({
+                    name: newCrew.name, 
+                    country_ranking: newCrew.country_ranking, 
+                    hit_accuracy: newCrew.hit_accuracy,
+                    color: newCrew.color
+                })
+            .select();
+
+        alert('Success! You have now created an osu!Mate : )');
     }
 
     return (
