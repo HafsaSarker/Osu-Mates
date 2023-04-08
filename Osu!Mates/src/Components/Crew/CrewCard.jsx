@@ -5,7 +5,11 @@ import './CrewCard.css'
 export default function CrewCard({id, name, country_ranking, hit_accuracy, color}) {
     return (
         <div className={`card + ${color}`}>
-            <div className="icon"><span><FiMoreVertical /></span></div>
+            <div className="icon">
+                <Link to="/edit/:id">
+                    <span><FiMoreVertical /></span>
+                </Link>
+            </div>
             <div className="stats">
                 <h3>Name: {name}</h3>
                 <img src="./profile.png"/>

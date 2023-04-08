@@ -1,6 +1,9 @@
+import { useParams } from 'react-router-dom'
 import './EditCrew.css'
-
+//useParams and console id to see its value, id is A STRING, so don't do  === 
 export default function EditCrew() {
+    const id = useParams();
+    console.log(id) //WRONG ID CURRENTLY
     return (
         <div className="EditCrew">
             <h1>Update your osu!Mate</h1>

@@ -1,0 +1,11 @@
+.crew-stats{
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(335, 10%, 25%);
+    border-radius: 10px;
+    padding: 40px 0px;
+}
