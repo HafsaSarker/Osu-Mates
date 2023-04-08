@@ -19,7 +19,7 @@ function App() {
           <Route path='/create' element={<CreateCrew />}/>
           <Route path='/gallery' element={<ReadCrew crews={crews} setAllCrews={setAllCrews} />} />
           <Route path="/edit/:id" element={<EditCrew />}/>
-          <Route path="/stats/:id" element={<CrewStats />}/>
+          <Route path="/stats/:id" element={<CrewStats crews={crews} /> }/>
         </Route>
       </Routes>
     </div>

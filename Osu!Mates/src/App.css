@@ -6,6 +6,9 @@
   font-family: Torus,Inter,"Helvetica Neue",Tahoma,Arial,"Hiragino Kaku Gothic ProN",Meiryo,"Microsoft YaHei","Apple SD Gothic Neo",sans-serif;
   color: #fff;
 }
+a {
+  text-decoration: none;
+}
 
 input:focus {
   outline: none;

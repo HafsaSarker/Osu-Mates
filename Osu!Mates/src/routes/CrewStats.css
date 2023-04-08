@@ -1,4 +1,4 @@
-.crew-stats{
+.single-crew-stats{
     margin: 0px 50px;
     display: flex;
     flex-direction: column;
@@ -8,4 +8,28 @@
     background-color: hsl(335, 10%, 25%);
     border-radius: 10px;
     padding: 40px 0px;
+    gap: 10px;
+}
+
+.verdict > img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.verdict{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: hsl(335, 10%, 20%);
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.single-crew-stats > button {
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
