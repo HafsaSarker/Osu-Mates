@@ -1,0 +1,55 @@
+.EditCrew {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(335, 10%, 25%);
+    border-radius: 10px;
+    padding: 40px 0px;
+}
+
+.EditCrew > img {
+    border: solid #fff 2px;
+    width: 200px;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
+.edit-crew-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-crew-form > label{
+    display: flex;
+    flex-direction: column;
+}
+
+.currStat {
+    background-color: hsl(335, 10%, 20%);
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.currStat > h3 {
+    margin: 0;
+}
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+.btn-container > button {
+    margin-top: 8px;
+}

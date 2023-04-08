@@ -6,7 +6,7 @@ export default function CrewCard({id, name, country_ranking, hit_accuracy, color
     return (
         <div className={`card + ${color}`}>
             <div className="icon">
-                <Link to="/edit/:id">
+                <Link to={"/edit/"+id}>
                     <span><FiMoreVertical /></span>
                 </Link>
             </div>
