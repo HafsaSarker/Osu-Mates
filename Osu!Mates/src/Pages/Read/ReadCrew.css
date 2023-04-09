@@ -17,8 +17,9 @@
 }
 
 .allCrews {
+    padding: 0 20px;
     max-height: 720px;
-    overflow-x: scroll;
+    overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 40px;

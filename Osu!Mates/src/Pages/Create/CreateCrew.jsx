@@ -32,6 +32,7 @@ export default function CreateCrew() {
             .select();
 
         alert('Success! You have now created an osu!Mate : )');
+        window.location='/gallery';
     }
 
     return (
