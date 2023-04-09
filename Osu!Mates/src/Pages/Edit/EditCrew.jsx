@@ -40,8 +40,14 @@ export default function EditCrew({crews}) {
         window.location = "/gallery";
     }
 
-    function handleDelete() {
-        //stuff
+    async function handleDelete() {
+        await supabase
+            .from('mates')
+            .delete()
+            .eq('id', id);
+
+        alert('Successfully deleted :(');
+        window.location = "/gallery";
     }
 
     return (
@@ -67,6 +73,7 @@ export default function EditCrew({crews}) {
                             name='name'
                             value={editCrew.name}
                             onChange={handleChange}
+                            required
                         />
                         </label>
                         
@@ -77,6 +84,7 @@ export default function EditCrew({crews}) {
                             name='country_ranking'
                             value={editCrew.country_ranking}
                             onChange={handleChange}
+                            required
                         />
                         </label>
                         
@@ -87,12 +95,13 @@ export default function EditCrew({crews}) {
                             name='hit_accuracy'
                             value={editCrew.hit_accuracy}
                             onChange={handleChange}
+                            required
                         />
                         </label>
                        
                         <label>
                             Crew color:
-                            <select value={editCrew.color} onChange={handleChange} name='color'>
+                            <select value={editCrew.color} onChange={handleChange} name='color' required>
                                 <option value="blue">blue</option>
                                 <option value="purple">purple</option>
                                 <option value="pink">pink</option>

@@ -48,6 +48,7 @@ export default function CreateCrew() {
                         name='name'
                         onChange={handleChange}
                         placeholder='funnyBunny'
+                        required
                     />
                     </label>
                     
@@ -58,6 +59,7 @@ export default function CreateCrew() {
                         name='country_ranking'
                         type="text"
                         placeholder='245,823'
+                        required
                     />
                     </label>
                     
@@ -68,6 +70,7 @@ export default function CreateCrew() {
                         name='hit_accuracy'
                         type="float"
                         placeholder='95.56'
+                        required
                     />
                     </label>
                    
@@ -76,8 +79,8 @@ export default function CreateCrew() {
                         <select 
                             name='color' 
                             onChange={handleChange}
+                            required
                         >
-                            <option value="null">-select-</option>
                             <option value="blue">blue</option>
                             <option value="purple">purple</option>
                             <option value="pink">pink</option>
