@@ -13,7 +13,7 @@ export default function CrewCard({id, name, country_ranking, hit_accuracy, color
             <Link to={'/stats/' + id}>
                 <div className="stats">
                     <h3>Name: {name}</h3>
-                    <img src="./profile.png"/>
+                    <img src="/profile.png"/>
                     <h4>Country Ranking: #{country_ranking}</h4>
                     <h4>Hit Accuracy: {hit_accuracy}%</h4>
                     <h4>Color: {color}</h4>

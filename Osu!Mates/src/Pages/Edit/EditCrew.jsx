@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import './EditCrew.css'
 import { useState } from 'react';
+import { supabase } from '../../client';
 
 export default function EditCrew({crews}) {
     
@@ -22,10 +23,21 @@ export default function EditCrew({crews}) {
         }));
     }
 
-    function handleCrewUpdate(event) {
+    async function handleCrewUpdate(event) {
         event.preventDefault();
 
-        console.log(editCrew);
+        await supabase 
+            .from('mates')
+            .update({
+                name: editCrew.name,
+                country_ranking: editCrew.country_ranking,
+                hit_accuracy: editCrew.hit_accuracy,
+                color: editCrew.color 
+            })
+            .eq('id', id);
+
+        alert('Successfully updated :D');
+        window.location = "/gallery";
     }
 
     function handleDelete() {
@@ -37,7 +49,7 @@ export default function EditCrew({crews}) {
             {editCrew && 
                 <div className="EditCrew">
                 <h1>Update your osu!Mate</h1>
-                <img src='../../../public/create.webp' />
+                <img src='/create.webp' />
     
                 <div className="currStat">
                     <h3>Current Stats: </h3>
@@ -85,7 +97,7 @@ export default function EditCrew({crews}) {
                                 <option value="purple">purple</option>
                                 <option value="pink">pink</option>
                                 <option value="green">green</option>
-                                <option value="yellow">yellow</option>
+                                <option value="orange">orange</option>
                             </select>
                         </label>
                         

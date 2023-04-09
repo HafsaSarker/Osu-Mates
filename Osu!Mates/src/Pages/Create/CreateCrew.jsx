@@ -37,7 +37,7 @@ export default function CreateCrew() {
     return (
         <div className="createCrew">
             <h1>Create a new osu!Mate</h1>
-            <img src='./create.webp' />
+            <img src='/create.webp' />
 
             <div className="form">
                 <form className='create-crew-form' onSubmit={handleSubmit}>

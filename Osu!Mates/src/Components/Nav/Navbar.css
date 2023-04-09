@@ -4,7 +4,7 @@ nav {
     width: 200px;
     display: flex;
     flex-direction: column;
-
+    text-align: center;
     align-items: center;
     background-color: hsl(335, 10%, 20%);
     box-shadow: 1px 1px 5px rgb(36, 35, 35);

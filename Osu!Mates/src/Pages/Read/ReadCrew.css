@@ -9,6 +9,7 @@
     background-color: hsl(335, 10%, 25%);
     border-radius: 10px;
     padding: 40px 0px;
+    text-align: center;
 }
 
 .gallery > h1 {
