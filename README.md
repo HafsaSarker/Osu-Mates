@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='\Osu!Mates\public\proj7.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='.\proj7.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
