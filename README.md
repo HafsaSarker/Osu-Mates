@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 ## Problem
 
-For some reason, the gif is not showing the colors of my website properly. It looks like this in a screenshot:
+For some reason, the gif is not showing the colors of my website properlyv (might be a problem related to LICEcap ?). It looks like this in reality:
 
 <img src='.\Osu!Mates\public\web.png' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
