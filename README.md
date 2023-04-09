@@ -26,6 +26,12 @@ The following **additional** features are implemented:
 
 * [ ] List anything else that you added to improve the site's functionality!
 
+## Problem
+
+For some reason, the gif is not showing the colors of my website properly. It looks like this in a screenshot:
+
+<img src='.\Osu!Mates\public\web.png' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
